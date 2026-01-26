@@ -9,7 +9,7 @@ containers:
     args:
       - "-e"
       - "OPENAI_API_KEY=$(awk -F': *' '$1~/^openai-api-key$/{print $2; exit}' /mnt/ramdisk/external-config.yml)"
-      - "rkdud007/enclave:latest@sha256:930d5e2141941349cb081c433e9b3dc073a3572834f24890789dd6a688919fef"
+      - "rkdud007/enclave:latest@sha256:20614da74021dc2b9fbbfbbbb6209e960dd764d8247955a3075ddc533d6d76c6"
       - "--port"
       - "8001"
 
