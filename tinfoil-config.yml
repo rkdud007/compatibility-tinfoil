@@ -10,8 +10,6 @@ containers:
       - "-e"
       - "OPENAI_API_KEY=$(awk -F': *' '$1~/^openai-api-key$/{print $2; exit}' /mnt/ramdisk/external-config.yml)"
       - "rkdud007/enclave:latest@sha256:a488ce2907b60f18659f5d5690f84d1b7c8b1acf03dcbd0559d331301656c357"
-      - "--port"
-      - "8001"
 
 shim:
   listen-port: 443
