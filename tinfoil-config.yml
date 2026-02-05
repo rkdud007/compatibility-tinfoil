@@ -5,7 +5,7 @@ memory: 8192
 
 containers:
   - name: "ndai-enclave"
-    image: "rkdud007/ndai-zone:latest@sha256:63516e4cbe1a20f7ef392ff1cdefbfa85e01f88127a75fd81625e1ff7a98e06a"
+    image: "rkdud007/ndai-zone:latest@sha256:ae26837ba4d20fef77bfa405e5a42c0b8e920427487ad2eea1b5dee082db705e"
     secrets:
       - OPENAI_API_KEY
 
@@ -13,5 +13,6 @@ shim:
   listen-port: 443
   upstream-port: 8001
   paths:
+    - /health
     - /register
     - /rooms/*
