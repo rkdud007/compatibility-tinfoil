@@ -11,7 +11,7 @@ containers:
 
 shim:
   listen-port: 443
-  upstream-port: 8001
+  upstream-port: 8000
   paths:
     - /health
     - /register
