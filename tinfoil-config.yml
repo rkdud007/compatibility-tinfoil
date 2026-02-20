@@ -7,6 +7,7 @@ containers:
   - name: "ndai-enclave"
     image: "rkdud007/ndai-zone:latest@sha256:bf872bd708f61684395dc784f5a8575d4e3ef396cb52735c7f10c43321384b1f"
     secrets:
+      - TINFOIL_API_KEY
       - OPENAI_API_KEY
 
 shim:
