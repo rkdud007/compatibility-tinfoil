@@ -5,7 +5,7 @@ memory: 8192
 
 containers:
   - name: "ndai-enclave"
-    image: "rkdud007/ndai-zone:latest@sha256:54de7848025fee0140295f9490008c25caeaebce72863a1f261fd9b2fa6285a9"
+    image: "rkdud007/ndai-zone:latest@sha256:bf872bd708f61684395dc784f5a8575d4e3ef396cb52735c7f10c43321384b1f"
     secrets:
       - OPENAI_API_KEY
 
