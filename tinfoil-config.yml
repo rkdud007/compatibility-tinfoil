@@ -5,7 +5,7 @@ memory: 8192
 
 containers:
   - name: "ndai-enclave"
-    image: "rkdud007/ndai-zone:latest@sha256:bf872bd708f61684395dc784f5a8575d4e3ef396cb52735c7f10c43321384b1f"
+    image: "rkdud007/ndai-zone:latest@sha256:3c04e6e5cea712ffaa4ce30c7d83eb73e27e0c783d499e42083dbcd0f9cc3307"
     secrets:
       - TINFOIL_API_KEY
       - OPENAI_API_KEY
@@ -15,5 +15,6 @@ shim:
   upstream-port: 8000
   paths:
     - /health
+    - /verification
     - /register
     - /rooms/*
