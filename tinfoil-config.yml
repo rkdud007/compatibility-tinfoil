@@ -5,7 +5,7 @@ memory: 8192
 
 containers:
   - name: "ndai-enclave"
-    image: "rkdud007/ndai-zone:latest@sha256:3c04e6e5cea712ffaa4ce30c7d83eb73e27e0c783d499e42083dbcd0f9cc3307"
+    image: "rkdud007/ndai-zone:latest@sha256:d2e3a78a9ea7be7bb041195dbc903f601175c950eee03cc6dd06d173b9b1a37e"
     secrets:
       - TINFOIL_API_KEY
       - OPENAI_API_KEY
